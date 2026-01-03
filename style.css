@@ -3,7 +3,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #87CEEB; /* Langit biru untuk jelas */
 }
 #game-container {
     display: flex;
@@ -11,11 +11,13 @@ body {
     align-items: center;
     max-width: 100%;
     overflow: hidden;
+    background-color: #ffffff; /* Putih untuk kontras */
+    border: 2px solid #000;
 }
 #game-canvas {
     max-width: 100%;
     height: auto;
-    border: 2px solid #000;
+    border: none; /* Hilangkan border ganda */
 }
 @media (max-width: 768px) {
     #game-canvas {
