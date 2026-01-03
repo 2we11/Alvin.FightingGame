@@ -1,26 +1,25 @@
 body {
-        font-family: Arial, sans-serif;
-            text-align: center;
-                margin: 0;
-                    padding: 20px;
-                        background-color: #f0f0f0;
-                        }
-                        #game-container {
-                            display: flex;
-                                justify-content: center;
-                                    align-items: center;
-                                        max-width: 100%;
-                                            overflow: hidden;
-                                            }
-                                            #game-canvas {
-                                                max-width: 100%;
-                                                    height: auto;
-                                                        border: 2px solid #000;
-                                                        }
-                                                        @media (max-width: 768px) {
-                                                            #game-canvas {
-                                                                    width: 100vw;
-                                                                            height: 60vh;
-                                                                                }
-                                                                                }
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+#game-canvas {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+}
+@media (max-width: 768px) {
+    #game-canvas {
+        width: 100vw;
+        height: 60vh;
+    }
 }
