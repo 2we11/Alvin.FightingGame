@@ -2,18 +2,56 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Fighting Game Lengkap</title>
-                <link rel="stylesheet" href="style.css">
-                </head>
-                <body>
-                    <h1>Fighting Game</h1>
-                        <div id="game-container">
-                                <canvas id="game-canvas" width="800" height="600"></canvas>
-                                    </div>
-                                        <button id="restart-btn" style="display:none;">Restart Game</button>
-                                            <p>Kontrol HP: Sentuh tombol di bawah. Komputer: WASD + Space.</p>
-                                                <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
-                                                    <script src="script.js"></script>
-                                                    </body>
-                                                    </html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #87CEEB;
+        }
+        #game-canvas {
+            border: 2px solid #000;
+            display: block;
+            margin: 0 auto;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        .control-btn {
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            border-radius: 50%;
+            border: 2px solid #000;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #ccc;
+        }
+        .control-btn:active {
+            background-color: #aaa;
+        }
+        @media (max-width: 768px) {
+            .control-btn {
+                width: 60px;
+                height: 60px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Fighting Game</h1>
+    <canvas id="game-canvas" width="800" height="600"></canvas>
+    <div class="controls">
+        <button class="control-btn" id="left-btn">Kiri</button>
+        <button class="control-btn" id="right-btn">Kanan</button>
+        <button class="control-btn" id="jump-btn" style="background-color: #00ff00;">Lompat</button>
+        <button class="control-btn" id="punch-btn" style="background-color: #ff0000;">Pukul</button>
+    </div>
+    <p>Kontrol HP: Sentuh tombol di atas. Komputer: WASD + Space.</p>
+    <script src="script.js"></script>
+</body>
+</html>
