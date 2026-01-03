@@ -1,27 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: #87CEEB; /* Langit biru untuk jelas */
-}
-#game-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    overflow: hidden;
-    background-color: #ffffff; /* Putih untuk kontras */
-    border: 2px solid #000;
-}
-#game-canvas {
-    max-width: 100%;
-    height: auto;
-    border: none; /* Hilangkan border ganda */
-}
-@media (max-width: 768px) {
-    #game-canvas {
-        width: 100vw;
-        height: 60vh;
-    }
+        font-family: Arial, sans-serif;
+            text-align: center;
+                margin: 0;
+                    padding: 20px;
+                        background-color: #87CEEB; /* Latar biru */
+                        }
+                        #game-container {
+                            display: flex;
+                                justify-content: center;
+                                    align-items: center;
+                                        max-width: 100%;
+                                            overflow: hidden;
+                                                /* Hapus background putih agar canvas terlihat */
+                                                }
+                                                #game-canvas {
+                                                    max-width: 100%;
+                                                        height: auto;
+                                                            border: 2px solid #000;
+                                                            }
+                                                            @media (max-width: 768px) {
+                                                                #game-canvas {
+                                                                        width: 100vw;
+                                                                                height: 60vh;
+                                                                                    }
+                                                                                    }
 }
